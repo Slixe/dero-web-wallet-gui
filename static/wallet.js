@@ -656,6 +656,17 @@ function rename_wallet() {
 
 }
 
+function change_daemon_address() {
+	if (i_settings_daemon_address.value.length < 1) {
+		alert("daemon address cannot be NULL");
+		return;
+	}
+	
+	set_wallet_daemon_address(i_settings_daemon_address.value);
+	
+	alert("Daemon address has been changed!");
+}
+
 function Recover_Wallet_Using_Seed_Words() {
 
     if (verify_same_password(i_seed_pwd,i_seed_cpwd) == false) {

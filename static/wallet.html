@@ -762,6 +762,24 @@
                                 </div>
                             </div>
                         </div>
+						
+						<!-- SLIXE -->
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="collapsed card-link" data-toggle="collapse" href="#collapse7">
+                           Change daemon address
+                           </a>
+                            </div>
+                            <div id="collapse7" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control form-b" id="i_settings_daemon_address" placeholder="New daemon address" required>
+                                    </div>
+                                    <button type="button" class="btn btn-b-2 w-b btn-block btn-radius" onclick="change_daemon_address();">Change daemon address</button>
+                                </div>
+                            </div>
+                        </div>
+						<!-- END -->
                     </div>
                 </div>
                 <!-- Modal footer 
@@ -951,16 +969,6 @@
             }
         },
     });
-
-
-
-
-
-
-
-
-
-
 
     $(document).ready(function() {
 
